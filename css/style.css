@@ -304,6 +304,7 @@ main #ourservices .flex article p{
 
 .enlace i{
     font-size: 90%;
+    padding-left: 3px;
 }
 
 main #ourservices article div i{
@@ -412,6 +413,115 @@ main #aboutus figure:hover :is(.marco, img){
 
 /*fin de blog*/
 
+/*inicio menu*/
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+main #cartamenu div.container{
+    padding: 20px;
+}
+
+#cartamenu{
+    background-color:var(--colorSecundario)
+}
+.carta{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#cartamenu .container h2{
+    color: white;    
+}
+
+.carta a{
+    width: 100%;
+    justify-content: left;
+    text-decoration: none;
+    color: white;
+    font-size: var(--fuentePrincipal) var(--fontSize)    
+}
+
+.carta a:hover{
+    background-color:var(--colorPrincipal);
+    color: white;  
+    border-radius: 4px 4px;
+}
+
+.boton a:hover{
+    transition: 0.5s;
+    transform: translateX(5px);
+}
+
+#cartamenu .offers h2{
+    text-align: left;
+    font-size:var(--fontSize);
+    padding-top: 1em;
+    color: white;
+
+}
+
+.barra{
+    width: 15%;
+    color: var(--colorPrincipal);
+    margin-left: 0px;
+    margin-right: auto;
+      
+}
+
+main section .container .offers article h3{
+    color: white;
+    padding: 10px 0px;
+}
+
+main section .container .offers article p{
+    color: white;
+    padding: 10px 0px;
+    font-size: 0.75rem;
+}
+
+.offers{
+    display: flex;
+    flex-direction: column;
+}
+
+.offers article{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.offers article h3 span{
+    color: var(--colorPrincipal);
+}
+
+.offers article a{
+    font-size: 0.75rem;
+}
+
+main #cartamenu .container div.hotoffers h2{
+    color: white;
+    padding: 5px 0px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.hotoffers div p{
+    color: white;
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+
+
+
+
+/*fin menu*/
+
 /*media queries 600px*/
 
 @media(min-width:37.5em){
@@ -439,7 +549,7 @@ main #aboutus figure:hover :is(.marco, img){
     .flexblog>article{
         width: 33.333%;
     
-}
+    }
 
 }
     
@@ -498,6 +608,44 @@ main #aboutus figure:hover :is(.marco, img){
     main #ourservices .flex article:last-child{
         width: calc(33.333% - var(--marginGrid)*2);
     }
+
+    .flex{
+        flex-direction: row;
+    }
+
+    .offers article{
+        flex-direction: row;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .offers article .menu1{
+        height: 150px;
+        width: 200px;
+    }
+
+    .column1{
+        width: 30%;
+        padding: 0 25px;
+    }
+
+    .offers{
+        width: 70%;
+        padding: 0 5px;
+    }
+
+    .menudescription{
+        padding-left: 10px;
+    }
+
+    .carta{
+        margin-bottom: 150px;
+    }
+
+    .carta a{
+        padding: 10px 0;
+    }
+
 
 
 
