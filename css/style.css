@@ -424,7 +424,9 @@ main #cartamenu div.container{
 }
 
 #cartamenu{
-    background-color:var(--colorSecundario)
+    background-color:var(--colorSecundario);
+    height: 100vh;
+
 }
 .carta{
     margin-bottom: 25px;
